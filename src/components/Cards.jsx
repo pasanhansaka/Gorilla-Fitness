@@ -34,7 +34,7 @@ export function TrainerCard({ image, name, specialty }) {
     <motion.div
       variants={cardVariants}
       whileHover={{ y: -10 }}
-      className="relative group overflow-hidden rounded-2xl aspect-4/5"
+      className="relative group overflow-hidden rounded-2xl aspect-[4/5]"
     >
       {/* Using a placeholder if image fails or isn't provided, but normally uses `image` prop */}
       <img

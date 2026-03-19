@@ -20,7 +20,7 @@ export default function About() {
             transition={{ duration: 0.8 }}
             className="relative"
           >
-            <div className="aspect-4/5 rounded-3xl overflow-hidden shadow-2xl relative z-10">
+            <div className="aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl relative z-10">
               <img
                 src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?q=80&w=2070&auto=format&fit=crop"
                 alt="Gym interior space"

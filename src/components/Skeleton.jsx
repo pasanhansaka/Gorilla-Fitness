@@ -21,7 +21,7 @@ export const SectionHeaderSkeleton = () => (
 );
 
 export const TrainerSkeleton = () => (
-  <div className="relative overflow-hidden rounded-2xl aspect-4/5 bg-gray-300 dark:bg-gray-700 animate-pulse">
-    <div className="absolute inset-0 bg-linear-0-to-t from-black/20 to-transparent"></div>
+  <div className="relative overflow-hidden rounded-2xl aspect-[4/5] bg-gray-300 dark:bg-gray-700 animate-pulse">
+    <div className="absolute inset-0 bg-linear-to-t from-black/20 to-transparent"></div>
   </div>
 );
