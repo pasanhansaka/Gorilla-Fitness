@@ -1,14 +1,11 @@
-/** @format */
+import Home from './pages/Home';
 
-import React from 'react';
-import Hero from './components/Hero/Hero';
-
-const App = () => {
-	return (
-		<div className='App'>
-			<Hero />
-		</div>
-	);
-};
+function App() {
+  return (
+    <div className="antialiased">
+      <Home />
+    </div>
+  );
+}
 
 export default App;
