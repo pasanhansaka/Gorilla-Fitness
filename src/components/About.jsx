@@ -5,7 +5,7 @@ export default function About() {
   const stats = [
     { icon: <FiUsers />, value: '5000+', label: 'Happy Members' },
     { icon: <FiAward />, value: '50+', label: 'Expert Trainers' },
-    { icon: <FiClock />, value: '24/7', label: 'Gym Access' },
+    { icon: <FiClock />, value: 'Timely', label: 'Gym Access' },
   ];
 
   return (
