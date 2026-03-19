@@ -26,6 +26,16 @@ export default function Services() {
     }
   ];
 
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.1
+      }
+    }
+  };
+
   return (
     <section id="services" className="py-24 bg-white dark:bg-dark-lighter">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -59,17 +69,22 @@ export default function Services() {
           </motion.p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <motion.div 
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-100px" }}
+          className="grid md:grid-cols-2 lg:grid-cols-4 gap-8"
+        >
           {services.map((service, index) => (
             <ServiceCard
               key={index}
               icon={service.icon}
               title={service.title}
               description={service.description}
-              delay={index * 0.1}
             />
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   );

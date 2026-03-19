@@ -23,6 +23,16 @@ export default function Pricing() {
     }
   ];
 
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.1
+      }
+    }
+  };
+
   return (
     <section id="pricing" className="py-24 bg-white dark:bg-dark-lighter">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -56,7 +66,13 @@ export default function Pricing() {
           </motion.p>
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-8 lg:gap-12 max-w-5xl mx-auto">
+        <motion.div 
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-100px" }}
+          className="grid lg:grid-cols-3 gap-8 lg:gap-12 max-w-5xl mx-auto"
+        >
           {plans.map((plan, index) => (
             <PricingCard
               key={index}
@@ -64,10 +80,9 @@ export default function Pricing() {
               price={plan.price}
               features={plan.features}
               isPopular={plan.isPopular}
-              delay={index * 0.1}
             />
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   );

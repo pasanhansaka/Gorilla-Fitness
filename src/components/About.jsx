@@ -20,7 +20,7 @@ export default function About() {
             transition={{ duration: 0.8 }}
             className="relative"
           >
-            <div className="aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl relative z-10">
+            <div className="aspect-4/5 rounded-3xl overflow-hidden shadow-2xl relative z-10">
               <img
                 src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?q=80&w=2070&auto=format&fit=crop"
                 alt="Gym interior space"
@@ -48,7 +48,7 @@ export default function About() {
               MORE THAN JUST A GYM,
               <br /> WE ARE A COMMUNITY
             </h3>
-            
+
             <p className="text-lg text-gray-600 dark:text-gray-400 mb-6 leading-relaxed">
               At Gorilla Fitness, we believe that everyone has the potential for greatness. Our facility is designed to provide you with the best equipment, atmosphere, and guidance to help you reach your goals, whether you are a beginner or an elite athlete.
             </p>
