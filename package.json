@@ -3,7 +3,7 @@
 	"private": true,
 	"version": "0.0.0",
 	"type": "module",
-	"homepage": "https://pasanhansaka.github.io/Gorilla-Fitness",
+	"homepage": "https://pasanhansaka.github.io/GorillaFit/",
 	"scripts": {
 		"dev": "vite",
 		"build": "vite build",
