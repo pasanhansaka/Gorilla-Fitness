@@ -39,7 +39,7 @@
 ---
 
 
-**Live site:** [https://pasanhansaka.github.io/Gorilla-Fitness](https://pasanhansaka.github.io/Gorilla-Fitness)
+**Live site:** [https://pasanhansaka.github.io/GorillaFit](https://pasanhansaka.github.io/GorillaFit)
 
 ---
 
