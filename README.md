@@ -59,3 +59,8 @@ Gorilla-Fitness/
 ├── vite.config.js        # Vite configuration
 └── package.json          # Project dependencies
 ```
+---
+
+## ⚖️ License
+
+Private. Copyright © 2026 **Thorn Solution**. All Rights Reserved.
